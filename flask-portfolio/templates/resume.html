@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>My Resume</h1>
+<p>Download my resume: <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">Resume (PDF)</a></p>
+{% endblock %}
