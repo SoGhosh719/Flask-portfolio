@@ -18,3 +18,26 @@ nav a {
 .content {
     margin-top: 20px;
 }
+/* Full-screen video background */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay for readability */
+.overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
