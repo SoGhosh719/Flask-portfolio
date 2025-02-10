@@ -7,7 +7,7 @@ A **personal portfolio website** built using **Flask** and **HTML/CSS**, featuri
 - **Downloadable Resume** 📄 for easy access
 
 ## 🚀 Live Demo
-🔗 **[View Website on Render]((https://flask-portfolio-ny83.onrender.com/))**
+🔗 **[View Website on Render](https://flask-portfolio-ny83.onrender.com/)**
 
 ---
 
