@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Welcome to My Portfolio</h1>
-<p>Hi, I'm Soumyabrata! I'm a Python developer passionate about AI, UX, and business analytics.</p>
+<div class="profile-container">
+    <img src="{{ url_for('static', filename='profile.png') }}" alt="My Profile Photo" class="profile-img">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Soumyabrata! I'm a Python developer passionate about AI, UX, and business analytics.</p>
+</div>
 {% endblock %}
