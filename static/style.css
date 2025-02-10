@@ -65,26 +65,63 @@ body {
     background: rgba(0, 0, 0, 0.8);
 }
 
-/* Profile Image Styling */
-.profile-container {
-    text-align: center;
-    margin-top: 80px; /* Adjusted margin for better positioning */
+/* Home Page Layout */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+
+/* Left Side: Name & Summary */
+.text-content {
+    width: 50%;
+    text-align: left;
     color: white;
+    padding-left: 50px;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Right Side: Profile Image */
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-img {
-    width: 200px;
-    max-width: 100%;
+    width: 80%; /* Adjusted for responsiveness */
+    max-width: 450px; /* Keeps image large */
     height: auto;
-    border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    border: none; /* ✅ Removed the border */
+    box-shadow: none; /* ✅ Removed shadow */
 }
 
-/* Responsive Profile Image */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+
     .profile-img {
-        width: 150px;
+        width: 60%;
     }
 }
 
